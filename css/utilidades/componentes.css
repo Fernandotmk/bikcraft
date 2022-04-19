@@ -1,15 +1,21 @@
+.container {
+  max-width: 1200px;
+  box-sizing: border-box; /* faz com que os valores do padding nao somem ao max-width */
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .botao {
-  font-size: 1.125rem;
-  line-height: 1.33;
   text-transform: uppercase;
   color: var(--cor-p5);
   padding: 16px 32px;
   background: linear-gradient(#ffbf00, #f2a60c);
   border-radius: 4px;
-  font-family: "Poppins";
-  font-weight: 600;
   display: inline-block; /*pega o padding corretamente */
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  font: 600 1.125rem/1.35 "Poppins", sans-serif;
 }
 
 .botao:hover {
