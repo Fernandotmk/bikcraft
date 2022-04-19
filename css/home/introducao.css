@@ -17,6 +17,7 @@
 .introducao img {
   height: 100%;
   object-fit: cover;
+  width: 100%;
   border-radius: 4px;
 }
 
@@ -27,7 +28,6 @@
 .introducao p {
   margin-bottom: 20px;
 }
-
 
 @media (max-width: 800px) {
   .introducao-bg {

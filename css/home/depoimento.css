@@ -1,0 +1,26 @@
+.depoimento {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--cor-p1);
+}
+
+.depoimento img {
+  border-radius: 0px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.depoimento-conteudo {
+  padding: 40px 40px 80px 80px;
+  align-self: end;
+}
+
+.depoimento-conteudo p {
+  font-family: "Merriweather";
+  font-style: italic;
+}
+@media (max-width: 800px) {
+  .depoimento {
+    grid-template-columns: 1fr;
+  }
+}

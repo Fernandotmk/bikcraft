@@ -28,3 +28,22 @@
     font-size: 1rem;
   }
 }
+
+.link {
+  display: inline-block; /* pega os padding */
+  color: var(--cor-p1);
+  font: 600 1.5rem/1.5 "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+
+.link::after {
+  content: "";
+  display: block;
+  width: 100%; /* cria a linha no mesmo tamanho do .link */
+  height: 4px;
+  background-color: currentColor; /* Pega a cor do pai, ou seja do .link */
+}
+
+.link:hover {
+  color: var(--cor-0);
+}
