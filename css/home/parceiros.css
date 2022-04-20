@@ -3,7 +3,7 @@
   padding-bottom: 120px;
 }
 
-.parceiros h2{
+.parceiros h2 {
   margin-bottom: 60px;
 }
 
@@ -25,12 +25,12 @@
   margin: auto; /* aqui então foi colocado a margim auto */
 }
 
-.parceiros li:first-child, 
+.parceiros li:first-child,
 .parceiros li:nth-child(5) {
   border-left: none;
 }
 
-.parceiros li:nth-child(n+5){
+.parceiros li:nth-child(n + 5) {
   border-top: 2px solid var(--cor-2);
 }
 
@@ -44,7 +44,10 @@
   .parceiros ul {
     grid-template-columns: 1fr 1fr;
   }
-  .parceiros li:nth-child(n+3){
+  .parceiros li {
+    padding: 20px;
+  }
+  .parceiros li:nth-child(n + 3) {
     border-top: 2px solid var(--cor-2);
   }
   .parceiros li:nth-child(odd) {
