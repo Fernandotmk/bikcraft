@@ -57,7 +57,7 @@
   background-image: url("../../img/icones/lista.svg");
  }
 .seguros-item a {
-  grid-column: 1-1;
+  grid-column: 1/-1;
 }
 
 @media (max-width: 800px ){
