@@ -96,8 +96,6 @@
   color: var(--cor-6);
 }
 
-
-
 @media (max-width: 800px) {
   .bicicleta {
     grid-template-columns: 1fr;
@@ -110,10 +108,10 @@
 }
 
 @media (max-width: 400px) {
-  .bicicleta-informacoes{
+  .bicicleta-informacoes {
     grid-template-columns: 1fr;
   }
-  .bicicleta-comprar{
+  .bicicleta-comprar {
     grid-template-columns: 1fr;
   }
 }
