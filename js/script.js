@@ -55,7 +55,7 @@ function ativarPergunta(event) {
 }
 
 function eventoPerguntas(pergunta) {
-  pergunta.addEventListener("click", ativarPergunta);
+  pergunta.addEventListener("click",ativarPergunta);
 }
 
 perguntas.forEach(eventoPerguntas);
@@ -68,14 +68,26 @@ const galeria = document.querySelector(".bicicleta-imagens");
 
 function galeriaFuncao(imagem) {
   const foto = imagem.currentTarget;
-  const media = matchMedia("(min-width: 1000px").matches;
+  const media = matchMedia("(min-width: 1000px)").matches;
   if (media) {
+    /** o metodo matchMedia retorna um true ou false do tamanho atual da tela conforme a regra aplicada entre (), nesse caso se a tela for maior que 1000 vai retornar true e entao o if executará o metodo prepend */
     galeria.prepend(foto);
+    /** o método prepend faz com o que o item clicado fique na 1* posição dentro da galeria */
   }
 }
 
-function trocarImagem(img) {
+function trocarImagem (img) {
   img.addEventListener("click", galeriaFuncao);
 }
 
 imagens.forEach(trocarImagem);
+
+
+/** Animador de imagens através do plugin da Origamid */
+
+// if verifica se ele esta na tela atual
+if(window.SimpleAnime){
+new SimpleAnime();
+}
+
+
